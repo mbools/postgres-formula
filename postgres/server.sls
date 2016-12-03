@@ -74,7 +74,7 @@ postgresql-running:
   service.running:
     - name: {{ postgres.service }}
     - enable: True
-    - reload: True
+    - reload: {{ postgres.reload }}
     - watch:
       - file: postgresql-pg_hba
 

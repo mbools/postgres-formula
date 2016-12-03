@@ -3,6 +3,7 @@
 postgres:
   use_upstream_repo: True
   version: '9.5'
+  reload: True
   pkg: postgresql
   pkgs_extra: []
   pkg_client: postgresql-client
